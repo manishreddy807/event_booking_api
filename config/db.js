@@ -1,9 +1,9 @@
-const moongoose = require("mongoose");
+const mongoose = require("mongoose");
 const password = encodeURIComponent("")
 const username = manishReddy;
 module.exports = async() => {
      try {
-         await moongoose.connect(`mongodb+srv://${username}:${password}@cluster0.xnkhp.mongodb.net/?retryWrites=true&w=majorit`, {
+         await mongoose.connect(`mongodb+srv://${username}:${password}@cluster0.xnkhp.mongodb.net/?retryWrites=true&w=majorit`, {
                 useUnifiedtopology: true,
                 useNewUrlParser: true
              });
